@@ -1,0 +1,46 @@
+.logIn-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.fullscreen-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  /* Ensure content is displayed on top of the video */
+}
+
+.square-container {
+  width: 100%;
+  padding-top: 100%;
+  /* This will make the container square */
+  position: relative;
+  overflow: hidden;
+}
+
+.square-container video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
